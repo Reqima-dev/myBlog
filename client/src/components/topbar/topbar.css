@@ -1,0 +1,95 @@
+.top {
+  width: 100%;
+  height: 70px;
+  background-color: white;
+  position: sticky;
+  top: 0;
+  display: flex;
+  align-items: center;
+  font-family: "Josefin Sans", sans-serif;
+  z-index: 999;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.048);
+}
+
+.topLeft,
+.topRight {
+  flex: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.topCenter {
+  flex: 6;
+}
+
+.topIcons {
+  font-size: 20px;
+  margin-right: 10px;
+  color: #444;
+}
+
+.topImg {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.topList {
+  display: flex;
+  justify-content: center;
+}
+
+.topListItem {
+  margin-right: 20px;
+  font-size: 18px;
+  font-weight: 300;
+  cursor: pointer;
+}
+
+.topSearchIcons {
+  font-size: 18px;
+  color: #666;
+  cursor: pointer;
+  margin-left: 15px;
+}
+
+@media screen and (max-width: 780px) {
+  .topLeft {
+    display: none;
+  }
+  .top {
+    padding-left: 1rem;
+  }
+}
+
+@media screen and (max-width: 547px) {
+  .top {
+    flex-direction: column;
+    padding-bottom: 1.2rem;
+    padding-top: 1rem;
+    height: 90px;
+  }
+  .topRight {
+    padding-top: 10px;
+  }
+}
+
+@media screen and (max-width: 472px) {
+  .topList {
+    flex-wrap: wrap;
+  }
+  .topListItem {
+    padding-top: 10px;
+  }
+
+  .headerTitleSm,
+  .headerTitleLg {
+    top: 30%;
+  }
+  .top {
+    height: 157px;
+  }
+}
